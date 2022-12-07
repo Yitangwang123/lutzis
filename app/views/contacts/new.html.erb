@@ -1,0 +1,49 @@
+<div class="container">
+  <div class="row">
+    <div class="col-6">
+      <div>
+        <p>Thanks for your interest!
+        <br>
+        <br>
+        Please fill in the form or send an e-mail to XXX@gamil.com.
+        <br>
+        <br>
+        Not every price is negotiable but every offer is considered
+        <br>
+        <br>
+        Follow us on insta and stay tuned
+        <br>
+        <br>
+        <br>
+        </p>
+      </div>
+    </div>
+
+    <div class="col-6">
+      <%= form_for @contact do |f| %>
+        <div class="col-md-6">
+          <%= f.label :name %></br>
+          <%= f.text_field  :name, required: true, class: "contact-form-text-area" %></br>
+
+          <%= f.label :email %></br>
+          <%= f.text_field :email, required: true, class: "contact-form-text-area" %></br>
+
+          <%= f.label :product %></br>
+          <%= f.text_area :product, rows: 3, cols: 40, required: true, class: "contact-form-text-area", 
+                placeholder: "Please describe the product accurately as this is a general contact form."%></br>
+
+          <%= f.label :message %></br>
+          <%= f.text_area :message, rows: 8, cols: 40, required: true, class: "contact-form-text-area", 
+                placeholder: "Send me a message"%></br>
+
+          <div class= "hidden">
+          <%= f.label :nickname %>
+          <%= f.text_field :nickname, :hint => 'Leave this field blank!' %>
+        </div>
+
+      <%= f.submit 'Send Message', class: 'btn btn-primary' %>
+    </div>
+    <% end %>
+    </div>
+  </div>
+</div>
