@@ -2,7 +2,8 @@
   <div class="row">
     <div class="col-6">
       <div>
-        <p>Thanks for your interest!
+        <h2>Thanks for your interest!</h2>
+        <p>
         <br>
         <br>
         Please fill in the form or send an e-mail to XXX@gamil.com.
@@ -14,8 +15,17 @@
         Follow us on insta and stay tuned
         <br>
         <br>
-        <br>
         </p>
+         <div>
+          <%= link_to "https://roomores.com/" do%>
+             <button class="btn btn-contact">Instgram</button>
+          <% end %>
+          </div>
+          <div>
+          <%= link_to "https://roomores.com/" do%>
+             <button class="btn btn-contact">Newsletter</button>
+          <% end %>
+        </div>
       </div>
     </div>
 
@@ -41,7 +51,7 @@
           <%= f.text_field :nickname, :hint => 'Leave this field blank!' %>
         </div>
 
-      <%= f.submit 'Send Message', class: 'btn btn-primary' %>
+      <%= f.submit 'Send Message', class: 'btn-submit' %>
     </div>
     <% end %>
     </div>
