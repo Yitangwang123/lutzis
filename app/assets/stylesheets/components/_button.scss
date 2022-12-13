@@ -1,0 +1,36 @@
+.btn-submit {
+  color: white;
+  font-weight: 300;
+  padding: 8px 24px;
+  font-style: normal;
+  text-transform: capitalize;
+  border-radius: 300px;
+  border: 0;
+  background: #000000;
+  &:hover {
+    text-decoration: none;
+    color: white;
+    background-color: #414040;
+    transition: 0.5s;
+  }
+}
+
+.btn-contact{
+    color: white;
+    font-weight: 300;
+    width: 25%;
+    padding: 8px 24px;
+    font-style: normal;
+    text-transform: capitalize;
+    border-radius: 300px;
+    border: 0;
+    background: #EB3B41;
+    margin: 5px;
+    &:hover {
+      text-decoration: none;
+      color: white;
+      background-color: #F0666B;
+      transition: 0.5s;
+    }
+  }
+  
