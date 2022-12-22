@@ -33,17 +33,17 @@
       <%= form_for @contact do |f| %>
         <div class="col-md-6">
           <%= f.label :name %></br>
-          <%= f.text_field  :name, required: true %></br>
+          <%= f.text_area :name, rows: 1, cols: 70, required: true %></br>
 
           <%= f.label :email %></br>
-          <%= f.email_field :email, required: true %></br>
+          <%= f.text_area :email, rows: 1, cols: 70, required: true %></br>
 
           <%= f.label :product %></br>
-          <%= f.text_area :product, rows: 3, cols: 40, 
+          <%= f.text_area :product, rows: 3, cols: 70, 
                 placeholder: "Please describe the product accurately as this is a general contact form."%></br>
 
           <%= f.label :message %></br>
-          <%= f.text_area :message, rows: 8, cols: 40, required: true,
+          <%= f.text_area :message, rows: 8, cols: 70, required: true,
                 placeholder: "Send me a message"%></br>
 
           <div class= "hidden">
@@ -51,7 +51,7 @@
           <%= f.text_field :nickname, :hint => 'Leave this field blank!' %>
         </div>
 
-      <%= f.submit 'Send Message', class: 'btn-submit' %>
+      <%= f.submit 'Send Message', class: 'btn-submit mt-3' %>
     </div>
     <% end %>
   </div>
