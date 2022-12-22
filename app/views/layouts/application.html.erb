@@ -20,6 +20,10 @@
       <% end %>
     </div>
     
-    <%= yield %>
+    <div class="main-content">
+      <%=yield %>
+    </div>
+    
+    <%= render 'shared/footer' %>
   </body>
 </html>
